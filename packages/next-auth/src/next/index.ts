@@ -63,6 +63,7 @@ function NextAuth(
 function NextAuth(
   ...args: [AuthOptions] | [NextApiRequest, NextApiResponse, AuthOptions]
 ) {
+  console.log("args: ", args);
   if (args.length === 1) {
     return async (req: NextAuthRequest, res: NextAuthResponse) =>
       await NextAuthHandler(req, res, args[0])
