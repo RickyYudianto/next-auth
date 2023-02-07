@@ -21,7 +21,7 @@ node_modules
 
 # Build dirs
 .next
-build
+#build
 dist
 
 # Generated files
